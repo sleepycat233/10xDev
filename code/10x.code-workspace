@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "test",
+			"path": "testcode/test"
+		},
+		{
+			"path": "../qmk_firmware"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"quantum.h": "c",
+			"10x_developer.h": "c"
+		}
+	}
+}
