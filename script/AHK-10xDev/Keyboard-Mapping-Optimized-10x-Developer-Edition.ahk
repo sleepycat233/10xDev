@@ -70,9 +70,9 @@ Hotkey, *t, Off
 Hotkey, *a, Off
 Hotkey, *d, Off
 Hotkey, *`;, Off
-Hotkey, *g, Off
+; Hotkey, *g, Off
 Hotkey, *t, Off
-; Hotkey, *b, Off
+Hotkey, *b, Off
 ; Hotkey, *p, Off
 Hotkey, *i, Off
 ; Hotkey, *!, Off
@@ -81,12 +81,12 @@ Hotkey, *i, Off
 ; Hotkey, *$, Off
 ; Hotkey, *`%, Off
 ; Hotkey, *^, Off
-Hotkey, 1, Off
-Hotkey, 2, Off
-Hotkey, 3, Off
-Hotkey, 4, Off
-Hotkey, 5, Off
-Hotkey, 6, Off
+; Hotkey, 1, Off
+; Hotkey, 2, Off
+; Hotkey, 3, Off
+; Hotkey, 4, Off
+; Hotkey, 5, Off
+; Hotkey, 6, Off
 ; Hotkey, *9, Off
 Hotkey, *n, Off
 ; Hotkey, 0, Off
@@ -118,9 +118,9 @@ Hotkey, *n, Off
     Hotkey, *a, on
     Hotkey, *d, on
     Hotkey, *`;, on
-    Hotkey, *g, on
+    ; Hotkey, *g, on
     Hotkey, *t, on
-    ; Hotkey, *b, on
+    Hotkey, *b, on
     ; Hotkey, *p, on
     Hotkey, *i, on
     ; Hotkey, *!, on
@@ -129,12 +129,12 @@ Hotkey, *n, Off
     ; Hotkey, *$, on
     ; Hotkey, *`%, on
     ; Hotkey, *^, on
-Hotkey, 1, On
-Hotkey, 2, On
-Hotkey, 3, On
-Hotkey, 4, On
-Hotkey, 5, On
-Hotkey, 6, On
+; Hotkey, 1, On
+; Hotkey, 2, On
+; Hotkey, 3, On
+; Hotkey, 4, On
+; Hotkey, 5, On
+; Hotkey, 6, On
     ; Hotkey, *9, on
     Hotkey, *n, on
     ; Hotkey, 0, on
@@ -167,9 +167,9 @@ return
     Hotkey, *a, Off
     Hotkey, *d, Off
     Hotkey, *`;, Off
-    Hotkey, *g, Off
+    ; Hotkey, *g, Off
     Hotkey, *t, Off
-    ; Hotkey, *b, Off
+    Hotkey, *b, Off
     ; Hotkey, *p, Off
     Hotkey, *i, Off
     ; Hotkey, *!, Off
@@ -178,12 +178,12 @@ return
     ; Hotkey, *$, Off
     ; Hotkey, *`%, Off
     ; Hotkey, *^, Off
-    Hotkey, 1, Off
-    Hotkey, 2, Off
-    Hotkey, 3, Off
-    Hotkey, 4, Off
-    Hotkey, 5, Off
-    Hotkey, 6, Off
+    ; Hotkey, 1, Off
+    ; Hotkey, 2, Off
+    ; Hotkey, 3, Off
+    ; Hotkey, 4, Off
+    ; Hotkey, 5, Off
+    ; Hotkey, 6, Off
     ; Hotkey, *9, Off
     ; Hotkey, 0, Off
     Hotkey, *n, Off
@@ -227,7 +227,7 @@ return
 ; *e::send {LCtrl Down}{k}{LCtrl Up}{LShift Down}{,}{LShift Up} ;select inside angled brackets ! "Quick and Simple Text Selection" (extension.selectAngleBrackets)
 ; *h::send {LCtrl Down}{k}{LCtrl Up}{LShift Down}{.}{LShift Up} ;select inside HTML tag ! "Quick and Simple Text Selection" (extension.selectInTag)
 ; *[::send {blind}{LCtrl Down}{k}{LCtrl Up}{[}   ;select inside square/curly bracket ! "Quick and Simple Text Selection"
-*f::send {blind}{F13} ;(Flip case) flip to lower/upper/camal/firstUpper case !"change-case" (extension.changeCase.lower, extension.changeCase.upper, extension.changeCase.upperFirst)
+*b::send {blind}{F13} ;(Flip case) flip to lower/upper/camal/firstUpper case !"change-case" (extension.changeCase.lower, extension.changeCase.upper, extension.changeCase.upperFirst)
 *.::send {blind}{F14} ;swap argument right !"Any Swap" (anySwap.forward)
 *,::send {blind}{F15} ;swap argument left (anySwap.Backward)
 *q::send {blind}{F16} ;(Quote) select inside quote !"Bracket Select" (bracket-select.select)
@@ -235,19 +235,19 @@ return
 *e::send {blind}{LCtrl Down}{l}{LCtrl Up}{e} ;Balance (outward)
 
 *;::send {blind}{LCtrl Down}{LShift Down}{;}{LShift Up}{LCtrl Up}    ;add ;: at end of line !Semicolon Insertion Shortcut
-; *g::send {Blind}{LCtrl Down}{g}{LCtrl Up} ;(Goto) go to word !Metago
+
 ; *s::send {LCtrl Down}{LShift Down}{LAlt Down}{g}{LAlt Up}{LShift Up}{LCtrl Up} ;(Select to)
-*g::send {Blind}{F18}
+*f::send {Blind}{F18} ; Metago
 *s::send {Blind}{F19}
 *d::send {LAlt Down}{d}{LAlt Up} ;(Delete to)
 ; *d::send {Blind}{Delete}
 
-1::send {LCtrl Down}{k}{LCtrl Up}{LCtrl Down}{i}{LCtrl Up}   ;display hover
-2::send {LAlt Down}{F12}{LAlt Up} ;peek definition
-3::send {LShift Down}{LAlt Down}{h}{LAlt Up}{LShift Up} ;hierarchy
-4::send {LCtrl Down}{LShift Down}{o}{LShift Up}{LCtrl Up} ;goto symbol
-5::send {F12} ;goto definition
-6::send {LCtrl Down}{d}{t}{LCtrl Up}   ;transpose
+; 1::send {LCtrl Down}{k}{LCtrl Up}{LCtrl Down}{i}{LCtrl Up}   ;display hover
+; 2::send {LAlt Down}{F12}{LAlt Up} ;peek definition
+; 3::send {LShift Down}{LAlt Down}{h}{LAlt Up}{LShift Up} ;hierarchy
+; 4::send {LCtrl Down}{LShift Down}{o}{LShift Up}{LCtrl Up} ;goto symbol
+; 5::send {F12} ;goto definition
+; 6::send {LCtrl Down}{d}{t}{LCtrl Up}   ;transpose
 
 ; *b::send {end}{space}{{}{}}{left}{enter}    ;add bracket{}and start a new line
 *n::send {LCtrl Down}{k}{LCtrl Up}{n}
@@ -282,7 +282,15 @@ Sleep, 300 ; give it time to save the script
 Reload
 Return
 
-#F12::Suspend, Toggle
+#F12::
+Suspend, Toggle
+if (A_IsSuspended) {
+    SetCapsLockState, Off
+}
+else {
+    SetCapsLockState, AlwaysOff
+}
+Return
 
 ; */::Send {blind}{?} ;
 ; *'::Send {blind}{"} ;
